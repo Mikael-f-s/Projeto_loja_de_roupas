@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/variables.css">    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="flex center">
+        <div class="conteiner flex header">
+            <div id="logo">Clothing</div>
+            <nav id="menu" class="flex">
+                <ul class="flex center">
+                    <li><button>Todos</button></li>
+                    <li><button>Acessórios</button></li>
+                    <li><button>Calçados</button></li>
+                    <li><button>Camisetas</button></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+    <div class="conteiner flex">
+        <main id="showcase" class="m-top flex">
+            
+        </main>
+        <aside class="m-top">
+            <div id="search">
+                <input form="search" type="text" name="search" placeholder="Digite aqui sua pesquisa" autocomplete="off">
+                <input form="search" type="submit" value="Pesquisar">
+            </div>
+            <div id="cart" class="flex">
+                <h3>Carrinho de compras</h3>
+                <div>
+                    <!-- Produto no Carrinho -->
+                    <div id="cart-itens">
+                        <div class="mini-card flex">
+                            <figure class="flex center">
+                                <img src="https://picsum.photos/600/450/?blur=2" alt="product reference">                                
+                            </figure>
+                            <div class="flex center">
+                                <h4>Nome do produto</h4>
+                                <p>R$ 200,00</p>
+                                <button>Remover produto</button>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Produto no Carrinho -->
+                    <div id="cart-resume">
+                        <p class="flex">
+                            <span>Quantidade:</span>
+                            <span>3</span>
+                        </p>
+                        <p class="flex">
+                            <span>Total</span>
+                            <span>R$ 250,00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="conteiner">            
+        </div>
+    </footer>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
