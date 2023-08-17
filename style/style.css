@@ -1,8 +1,21 @@
 body {
     background-color: white;
     font-family: var(--typography);
-    width: 100svw;
+    width: 100lvw;
     overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--gray-50);
+    border-radius: 20px;
 }
 
 header {
@@ -107,6 +120,11 @@ aside {
     background-color: var(--gray-0);
     overflow: auto;
     max-height: 300px;
+}
+
+.toggleCart {
+    height: 0px;
+    overflow: hidden;
 }
 
 .mini-card {
